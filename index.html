@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자스 필수패턴 3- 연산자</title>
+  </head>
+
+  <body>
+    <script>
+      //산술연산자
+      console.log(2 + 3);
+      console.log(2 - 3);
+      console.log(2 * 3);
+      console.log(4 / 2);
+      console.log(5 % 2);
+
+      //많이 안쓰이는데 증가시켜주는 것만 ++로 증가시켜준다는 것을 알면된다.
+      let num = 1;
+      console.log(--num);
+      console.log(num);
+
+      //비교연산자
+      console.log(3 == "3"); //==일때 값만 비교하고 자료형은 비교안함//값이 다르면 flase 같으면 true
+      console.log(3 === "3"); //값과 자료형을 모두 비교
+
+      console.log(2 != "2"); //값이 같지 않다. //=이 하나이기 때문에 값만비교, 자료형무시, 같은값
+      console.log(2 !== "2");
+
+      console.log(2 < 3);
+      console.log(2 <= 2);
+
+      console.log(true && true); // 복수개의 값이 모두 true가 되어야지 true반환
+      console.log(true || false); // 둘중의 하나만이라도 true가 있으면 true반환
+
+      //복합 대입 연산자
+      let num1 = 5;
+      //num1 = num1 + 2;
+      num1 += 2;
+      console.log(num1);
+      //여러개의 문자값을 더할 때 이어붙여줄 때 많이 쓰는이는 구문
+      let txt1 = "hello";
+      txt1 += " world";
+      console.log(txt1);
+    </script>
+  </body>
+</html>
